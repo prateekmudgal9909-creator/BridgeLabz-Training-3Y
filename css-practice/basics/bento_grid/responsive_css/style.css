@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+
+/*desktop*/
+@media(max-width:1280px){
+    .container{
+        background-color: rgb(246, 132, 191);
+
+    }
+}
+/*laptop*/
+
+@media(max-width:1024px){
+    .container{
+        background-color: yellow;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:660px){
+    .container{
+        background-color: green;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:480px){
+    .container{
+        background-color: blue;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}

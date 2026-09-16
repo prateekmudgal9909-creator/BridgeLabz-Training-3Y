@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	background: #f3f4f6;
+	font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    color: white;
+    background: #2563eb;
+    border-radius: 12px;
+    animation: moveMultiDirection 5s linear infinite;
+}
+.box:hover {
+    background: #16a34a;
+}
+@keyframes moveMultiDirection {
+    0% {
+        transform: translate(0, 0);
+        background-color: #2563eb;
+    }
+
+    25% {
+        transform: translate(200px, 0);
+        background-color: #dc2626;
+    }
+
+    50% {
+        transform: translate(200px, 200px);
+        background-color: #16a34a;
+    }
+
+    75% {
+        transform: translate(-200px, 200px);
+        background-color: #ca8a04;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: #9333ea;
+    }
+}
