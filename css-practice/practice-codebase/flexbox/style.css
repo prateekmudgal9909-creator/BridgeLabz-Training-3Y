@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    padding: 40px;
+}
+
+/* Main Flexbox container */
+.bento {
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+ 
+    display: flex;
+    gap: 15px;
+}
+
+/* Three columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Column sizes */
+.left {
+    flex: 2;
+}
+
+.middle {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+}
+
+/* Common box */
+.box {
+    flex: 1;
+
+    padding: 25px;
+    border-radius: 25px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.box:hover {
+    transform: scale(1.03);
+}
+
+/* Colors */
+
+.about {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+
+.projects {
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+}
+
+.skills {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.education {
+    background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.contact {
+    background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+/* Text */
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .bento {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    .box {
+        min-height: 180px;
+    }
+}
